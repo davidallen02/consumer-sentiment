@@ -13,9 +13,9 @@ df1 %>%
   reshape2::melt(id.vars = "dates") %>%
   set_colnames(c("dates", "variable","value")) %>%
   pamngr::lineplot() %>%
-  pamngr::pam.plot(
+  pamngr::pam_plot(
     faceted = "col",
-    plot.title = "Consumer Sentiment"
+    plot_title = "Consumer Sentiment"
   ) %>%
-  pamngr::ppt_output("all_indexes.png")
+  pamngr::all_output("all-indexes")
 
