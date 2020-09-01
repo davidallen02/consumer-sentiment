@@ -1,4 +1,3 @@
-devtools::install_github("davidallen02/pamngr", force = TRUE) 
 
 library(magrittr)
 
